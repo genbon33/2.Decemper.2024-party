@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>忘年会案内</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+
+<body>
+    <div class="container animate__animated animate__fadeIn">
+        <div class="header">
+            <h1>12月2日飲み会案内 </h1>
+        </div>
+
+        <div class="image-container">
+            <img src="./images/kanpai.jpg" alt="乾杯の様子" class="main-image">
+            <div class="image-overlay">
+                <div class="overlay-text">年末の宴 2023 🍻</div>
+            </div>
+        </div>
+
+        <div class="info-section">
+            <div class="info-item animate__animated animate__fadeInLeft">
+                <span class="info-label">場所：</span>
+                <a href="https://www.hotpepper.jp/strJ003474740/" class="venue-name" target="_blank">
+                    卓上サワー×食べ飲み放題 居酒屋 おすすめ屋 難波店
+                </a>
+            </div>
+
+            <div class="info-item location-detail animate__animated animate__fadeInLeft" style="animation-delay: 0.1s;">
+                <span class="info-label">アクセス：</span>日本創造学院より徒歩14分
+            </div>
+
+            <div class="info-item animate__animated animate__fadeInLeft" style="animation-delay: 0.2s;">
+                <span class="info-label">予約名：</span>
+                <span class="reservation-name">中嶋</span>
+            </div>
+
+            <div class="info-item animate__animated animate__fadeInLeft" style="animation-delay: 0.3s;">
+                <span class="info-label">日時：</span>2023年12月2日(土) 17:00～
+            </div>
+
+            <div class="info-item animate__animated animate__fadeInLeft" style="animation-delay: 0.4s;">
+                <span class="info-label">会費：</span>
+                <span class="highlight">食べ飲み放題 2500円</span>
+            </div>
+            <div class="info-item notice animate__animated animate__fadeInLeft" style="animation-delay: 0.5s;">
+                <span class="highlight-notice">※キャンセルされる方は、お名前に取り消し線を引いてください。</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="sliders-container">
+        <div class="slider-section">
+            <h3 class="slider-title">店内の様子</h3>
+            <div class="image-slider interior-slider">
+                <img src="./images/interior1.jpg" alt="店内写真1" class="slider-image active">
+                <img src="./images/interior2.jpg" alt="店内写真2" class="slider-image">
+                <img src="./images/interior3.jpg" alt="店内写真3" class="slider-image">
+                <div class="slider-controls">
+                    <button class="slider-button prev" onclick="changeSlide('interior', -1)">❮</button>
+                    <button class="slider-button next" onclick="changeSlide('interior', 1)">❯</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="slider-section">
+            <h3 class="slider-title">メニュー</h3>
+            <div class="image-slider menu-slider">
+                <img src="./images/menu1.jpg" alt="メニュー1" class="slider-image active">
+                <img src="./images/menu2.jpg" alt="メニュー2" class="slider-image">
+                <img src="./images/menu3.jpg" alt="メニュー3" class="slider-image">
+                <img src="./images/menu4.jpg" alt="メニュー4" class="slider-image">
+                <img src="./images/menu5.jpg" alt="メニュー5" class="slider-image">
+                <div class="slider-controls">
+                    <button class="slider-button prev" onclick="changeSlide('menu', -1)">❮</button>
+                    <button class="slider-button next" onclick="changeSlide('menu', 1)">❯</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h2>👥 参加予定メンバー</h2>
+
+    <div class="members-section">
+        <div class="member-item">斎藤</div>
+        <div class="member-item">中嶋</div>
+        <div class="member-item">安井</div>
+        <div class="member-item">出張</div>
+        <div class="member-item">岩崎</div>
+        <div class="member-item">石丸</div>
+        <div class="member-item">内田</div>
+        <div class="member-item">岸間</div>
+        <div class="member-item">伊藤</div>
+        <div class="member-item">關</div>
+        <div class="member-item">平佐</div>
+        <div class="member-item">西谷</div>
+        <div class="member-item">田所</div>
+        <div class="member-item">西山</div>
+        <div class="member-item">松本</div>
+    </div>
+
+    <div class="map-section">
+        <h2 class="map-title">📍 会場地図</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3281.521061711325!2d135.49910031084218!3d34.66679647281885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6000e77e1c70e0e7%3A0x32f3320d54e2d14e!2z5Y2T5LiK44K144Ov44O8w5fpo5_jgbnpo7Ljgb_mlL7poYwg5bGF6YWS5bGLIOOBiuOBmeOBmeOCgeWxiyDpm6Pms6Llupc!5e0!3m2!1sja!2sjp!4v1732240547699!5m2!1sja!2sjp"
+                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+
+    <footer class="footer">
+        🎊 楽しい忘年会にしましょう！ 🎊
+        <div class="footer-note">
+            キャンセルされる方は、お早めにご連絡ください。
+        </div>
+    </footer>
+    </div>
+
+    <script>
+        const sliders = {
+            interior: {
+                currentSlide: 0,
+                totalSlides: 3
+            },
+            menu: {
+                currentSlide: 0,
+                totalSlides: 5
+            }
+        };
+
+        function changeSlide(sliderType, direction) {
+            const slider = sliders[sliderType];
+            const images = document.querySelectorAll(`.${sliderType}-slider .slider-image`);
+
+            images[slider.currentSlide].classList.remove('active');
+
+            slider.currentSlide = (slider.currentSlide + direction + slider.totalSlides) % slider.totalSlides;
+
+            images[slider.currentSlide].classList.add('active');
+        }
+    </script>
+</body>
+
+</html>
